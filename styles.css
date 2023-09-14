@@ -306,44 +306,144 @@ button:hover {
 span {
   animation: iluminar 2s infinite;
 }
+html, body, h1, h2, p, ul, li, a, img, form, table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+}
 
-@media (max-width: 480px) {
-  .header {
-    padding: 110px;
-    margin: 50px;
-    height: 100px;
-    width: 5px;
-  }
-  .section-header {
-    display: flex;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-  }
+/* Add responsive CSS here */
+
+/* Mobile-first media query */
+@media screen and (max-width: 480px) {
+  /* Adjust styles for smaller screens here */
   .nav-bar {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar a {
+    margin: 5px 0;
+}
+
+.social-media {
+  font-size: 3rem;
+    margin-top: 200px;
+}
+
+.fa {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.card {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+.project {
+    max-width: 100%;
+    margin: 10px 0;
+}
+}
+
+
+/* Tablet and larger screens */
+@media screen and (max-width: 768px) {
+  .nav-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-bar a {
+      margin: 5px 0;
+  }
+
+  .social-media {
+      margin-top: 10px;
+  }
+
+  .fa {
+      font-size: 20px;
+      margin: 0 5px;
+  }
+
+  .card {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+
+  .project {
+      max-width: 100%;
+      margin: 10px 0;
   }
 }
-@media (max-width: 768px) {
-  body {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 920px) {
+  .nav-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
+
+  .nav-bar a {
+      margin: 5px 0;
+  }
+
   .social-media {
-    width: 15rem;
-    margin: 5rem;
-    padding: auto;
+      margin-top: 10px;
+  }
+
+  .fa {
+      font-size: 20px;
+      margin: 0 5px;
+  }
+
+  .card {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+
+  .project {
+      max-width: 100%;
+      margin: 10px 0;
   }
 }
 
-@media (max-width: 920px) {
-  body {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 1279px) {
+  .nav-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
+
+  .nav-bar a {
+      margin: 5px 0;
+  }
+
   .social-media {
-    width: 15rem;
-    margin: 5rem;
-    padding: auto;
+      margin-top: 10px;
+  }
+
+  .fa {
+      font-size: 20px;
+      margin: 0 5px;
+  }
+
+  .card {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+
+  .project {
+      max-width: 100%;
+      margin: 10px 0;
   }
 }
+
+
+
+
+
