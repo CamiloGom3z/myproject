@@ -233,7 +233,7 @@ body {
 }
 
 .contacto {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #1c676b;
@@ -323,14 +323,30 @@ html, body, h1, h2, p, ul, li, a, img, form, table {
     flex-direction: column;
     align-items: center;
 }
+.home{
+  font-size: larger;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+};
+
+#yo{
+  width: auto;
+   height: auto;
+}
 
 .nav-bar a {
-    margin: 5px 0;
+    margin-right: 15px ;
+}
+#link{
+  margin-top: 10rem;
 }
 
 .social-media {
   font-size: 3rem;
-    margin-top: 200px;
+ margin: 40px;
 }
 
 .fa {
@@ -342,10 +358,16 @@ html, body, h1, h2, p, ul, li, a, img, form, table {
     max-width: 100%;
     margin: 10px 0;
 }
+.services{
+  display: block;
+}
 
 .project {
-    max-width: 100%;
-    margin: 10px 0;
+  margin: auto;
+  display: block;
+  justify-content: s;
+  max-width: 100%;
+  margin: 10px 0;
 }
 }
 
@@ -354,12 +376,26 @@ html, body, h1, h2, p, ul, li, a, img, form, table {
 @media screen and (max-width: 768px) {
   .nav-bar {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
+      justify-content: center;
+   }
+   .home{
+    font-size: larger;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  };
+
+  
 
   .nav-bar a {
       margin: 5px 0;
+  }
+  #yo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .social-media {
@@ -375,10 +411,18 @@ html, body, h1, h2, p, ul, li, a, img, form, table {
       max-width: 100%;
       margin: 10px 0;
   }
+  .services{
+    display: block;
+  }
 
   .project {
       max-width: 100%;
       margin: 10px 0;
+  }
+  .lastes-project{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 920px) {
